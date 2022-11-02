@@ -75,7 +75,7 @@ img_rgb = Image.open(file_name).convert('RGB')
 draw = ImageDraw.Draw(img_rgb)
 draw.point([j, i], fill="red")
 
-while i != start_i & j != start_j:
+while not(i == start_i & j == start_j):
     if map_arr_way[i, j] == 1:
         j += 1
         draw.point([j, i], fill="red")
